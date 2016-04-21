@@ -1,0 +1,117 @@
+html
+{
+	height: 100%;
+}
+
+body
+{
+	/*background-color: #B0B0B0;*/
+	/*gradient*/
+	background-color:#909090;
+	background-image: url("45fabric.png"), linear-gradient(30deg, #707070 12%, transparent 12.5%, transparent 87%, #707070 87.5%, #707070),
+	linear-gradient(150deg, #707070 12%, transparent 12.5%, transparent 87%, #707070 87.5%, #707070),
+	linear-gradient(30deg, #707070 12%, transparent 12.5%, transparent 87%, #707070 87.5%, #707070),
+	linear-gradient(150deg, #707070 12%, transparent 12.5%, transparent 87%, #707070 87.5%, #707070),
+	linear-gradient(60deg, #B0B0B0  25%, transparent 25.5%, transparent 75%, #B0B0B0  75%, #B0B0B0 ), 
+	linear-gradient(60deg, #B0B0B0  25%, transparent 25.5%, transparent 75%, #B0B0B0  75%, #B0B0B0 );
+	background-size:80px 140px;
+	background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+	/*- end -*/
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	height: 100%;
+}
+
+#page
+{
+	width: 720px ;
+	height: 100%;
+	margin-left: auto ;
+	margin-right: auto ;
+	background-color: #FFF8FA;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	box-shadow: 0px 0px 25px #888888;
+}
+
+#header
+{
+	width: 700px ;
+	height: 360px;
+	margin-left: auto ;
+	margin-right: auto ;
+	background-color: #FFF0F5;
+	background-image: url("randomlogo.png");
+	background-position: center;
+	padding: 0;
+}
+
+#footer
+{
+	width: 700px ;
+	height: calc(100% - 560px);
+	margin-left: auto ;
+	margin-right: auto ;
+	background-color: #FFF8FA;
+	padding: 0;
+}
+
+p.footerMenu
+{
+	font-size: 12px;
+	padding: 0;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#carrouselBox
+{
+	width: 720px;
+	max-width: 720px;
+	height: 200px;
+	max-height: 200px;
+	position: relative; /* to make sure the children that are absolutely positionned inherit its axis */
+}
+
+#carrousel
+{
+	width: 700px;
+	max-width: 700px;
+	height: 200px;
+	max-height: 200px;
+	overflow: hidden;
+	margin-left: 10px ;
+	margin-right: 10px ;
+	padding: 0;
+}
+
+#carrousel.imgcar
+{
+	position: absolute;
+	top: 0;
+}
+
+#prevCar
+{
+	position: absolute;
+	top: 30%;
+	left: 0;
+}
+#nextCar
+{
+	position: absolute;
+	top: 30%;
+	right: 0;
+}
+
+.fondBlanc
+{
+	background-color: white;
+	opacity: 0.75;
+	font-size: 24px;
+}
