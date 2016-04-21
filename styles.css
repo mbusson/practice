@@ -1,0 +1,145 @@
+body {
+    background-color: black;
+	background-image: url("images/background.jpg");
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* preparing custom fonts */
+@font-face {
+    font-family: 'Cantarell'; /*name to be used later*/
+    src: url('fonts/Cantarell.ttf');
+}
+@font-face {
+    font-family: 'Ostrich';
+    src: url('fonts/Ostrich.ttf');
+}
+@font-face {
+    font-family: 'Josefin';
+    src: url('fonts/JosefinSans.ttf');
+}
+
+#logo {
+	background-color:#EDEEDC;
+	float:left;
+	position: relative;
+	width:23.23%;
+	box-shadow: 0 1px 1px 0 #000000;
+}
+
+header {
+    background-color:black;
+	width:76.77%;
+	margin:0 0 0 23.23%;
+	height:48px;
+    color:white;
+	position: relative;
+}
+
+h1 {
+    color:black;
+	padding:13px 20px 13px 20px;
+	margin:0px;
+	font-family: Ostrich;
+	font-style: normal; /*removing h1 default values*/
+	font-weight: normal; /*removing h1 default values*/
+	font-size: 2.67vw;
+	letter-spacing:7px;
+	float:left;
+}
+
+h2 {
+    color:#D2D2D2;
+	padding:13px;
+	margin:0px;
+	font-family: Josefin;
+	font-style: normal; /*removing h1 default values*/
+	font-weight: normal; /*removing h1 default values*/
+	font-size:1em;
+	float:left;
+}
+
+#contact {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+	height:48px;
+	color:#FFFCF8;
+	padding:8px;
+	margin:0px;
+	font-family: Josefin;
+	font-style: normal; /*removing h1 default values*/
+	font-weight: normal; /*removing h1 default values*/
+	font-variant: small-caps;
+	font-size:1.5em;
+}
+
+p {
+    color:white;
+}
+
+#middle {
+	margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px; /*half width*/
+    margin-top: -25px; /*half height*/
+	height:50px;
+	width:50px;
+	/*background-color:#FA5262;*/
+}
+
+nav {
+	width:20%;
+	float: right;
+	position:relative;
+	padding-top: 100px;
+	font-family: Cantarell;
+	font-size:20px;
+	letter-spacing: 4px;
+}
+
+.menu {
+	background-color:rgba(0,0,0,0.65);
+	width:100%;
+    color:white;
+	padding:10px;
+	margin-bottom:50px;
+	/*box-shadow: 10px 10px 5px #888888;*/
+}
+
+.menuret {
+	background-color:rgba(0,0,0,0.65);
+	width:50%;
+	height:40px;
+	float:right;
+    color:white;
+	margin-bottom:50px;
+}
+
+#bio {
+	width:150px;
+	height:150px;
+	float: left;
+	position:absolute;
+	bottom:0%;
+	margin: 1%;
+	background-color:rgba(225,225,225,0.25);
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	border-radius: 150px;
+	font-family: Josefin;
+	font-size:60px;
+	letter-spacing: 8px;
+	text-align: center;
+	vertical-align:center;
+}
+
+#bio p {
+	margin:40px 0 0 15px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
