@@ -5,18 +5,7 @@ html
 
 body
 {
-	/*background-color: #B0B0B0;*/
-	/*gradient*/
-	background-color:#909090;
-	background-image: url("45fabric.png"), linear-gradient(30deg, #707070 12%, transparent 12.5%, transparent 87%, #707070 87.5%, #707070),
-	linear-gradient(150deg, #707070 12%, transparent 12.5%, transparent 87%, #707070 87.5%, #707070),
-	linear-gradient(30deg, #707070 12%, transparent 12.5%, transparent 87%, #707070 87.5%, #707070),
-	linear-gradient(150deg, #707070 12%, transparent 12.5%, transparent 87%, #707070 87.5%, #707070),
-	linear-gradient(60deg, #B0B0B0  25%, transparent 25.5%, transparent 75%, #B0B0B0  75%, #B0B0B0 ), 
-	linear-gradient(60deg, #B0B0B0  25%, transparent 25.5%, transparent 75%, #B0B0B0  75%, #B0B0B0 );
-	background-size:80px 140px;
-	background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
-	/*- end -*/
+	background-color: #28282E;
 	margin: 0;
 	padding: 0;
 	min-height: 100%;
@@ -33,35 +22,67 @@ body
 	padding: 0;
 	margin-top: 0;
 	margin-bottom: 0;
-	box-shadow: 0px 0px 25px #888888;
+	box-shadow: 0px 0px 25px #000000;
 }
 
 #header
 {
 	width: 700px ;
-	height: 360px;
-	margin-left: auto ;
-	margin-right: auto ;
-	background-color: #FFF0F5;
-	background-image: url("randomlogo.png");
-	background-position: center;
-	padding: 0;
-}
-
-#footer
-{
-	width: 700px ;
-	height: calc(100% - 560px);
+	height: 320px;
 	margin-left: auto ;
 	margin-right: auto ;
 	background-color: #FFF8FA;
 	padding: 0;
 }
 
+#logo
+{
+	width: 397px ;
+	height: 293px;
+	background-image: url("randomlogo.png");
+	background-position: center;
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+	margin-left: auto ;
+	margin-right: auto ;
+	margin-top: auto ;
+	margin-bottom: auto ;
+}
+
+/* preparing custom fonts */
+@font-face {
+    font-family: 'Besom'; /*name to be used later*/
+    src: url('fonts/Besom.ttf');
+}
+@font-face {
+    font-family: 'Cabana';
+    src: url('fonts/Cabana.otf');
+}
+
+#footer
+{
+	width: 700px ;
+	height: calc(100% - 520px);
+	margin-left: auto ;
+	margin-right: auto ;
+	background-color: #FFFFFF;
+	padding: 0;
+}
+
+#footer a
+{
+	text-decoration: none;
+	color: #000000;
+}
+
 p.footerMenu
 {
-	font-size: 12px;
+	font-family: Cabana;
+	font-size: 32px;
+	/*font-weight: bold;*/
+	color: #000000;
 	padding: 0;
+	margin-bottom: 0;
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -114,4 +135,36 @@ p.footerMenu
 	background-color: white;
 	opacity: 0.75;
 	font-size: 24px;
+}
+
+.tilt {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+ 
+.tilt:hover {
+	-webkit-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-o-transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+
+.tiltR {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.tiltR:hover {
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	transform: rotate(5deg);
 }
