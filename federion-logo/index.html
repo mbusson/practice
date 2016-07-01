@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimal-ui, shrink-to-fit=no">
+    
+    <title>Federion Logo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="mask pseudo">
+       <a href="http://www.federion.net">
+        <img src="http://www.imgserv.com/images/2016/07/01/WjXMKq5Rd.png" width="101.5" height="150" alt="Federion" />
+       </a>
+    </div>
+
+    <svg height="0">
+      <!-- THE mask -->
+      <mask id="mask-firefox">
+        <image xlink:href="http://www.imgserv.com/images/2016/07/01/WjXMKq5Rd.png" filter="url(#filter)" /> 
+      </mask>
+      
+      <!-- the filter to make the image white -->
+      <filter id="filter">
+        <feFlood flood-color="white" />
+        <feComposite in2="SourceAlpha" operator="in" />
+      </filter>
+    </svg>
+  </body>
+</html>
