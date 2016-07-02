@@ -8,6 +8,7 @@ html{
   height: 150px;
   text-align:center;
   margin: 50px auto;
+  background: ;
   -webkit-filter: drop-shadow(1px 1px 2px rgba(0,0,0,.5));
 }
 .mask a{
@@ -16,7 +17,7 @@ html{
 .mask a:hover,
 .mask a:focus{
   background-position: 50px 30px;
-  transition: all 0.85s;
+  transition: all 0.95s;
 }
 .mask a::after{
   content:'';
