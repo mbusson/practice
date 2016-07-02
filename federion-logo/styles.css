@@ -16,8 +16,7 @@ html{
 .mask a:hover,
 .mask a:focus{
   background-position: 50px 30px;
-  /*change speed to see in slow motion*/
-  transition: all 1s;
+  transition: all 0.85s;
 }
 .mask a::after{
   content:'';
